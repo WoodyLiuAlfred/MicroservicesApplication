@@ -16,6 +16,13 @@
 		EF45A09E2B0C831F001FB647 /* MicroservicesApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A09D2B0C831F001FB647 /* MicroservicesApplicationTests.swift */; };
 		EF45A0A82B0C831F001FB647 /* MicroservicesApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0A72B0C831F001FB647 /* MicroservicesApplicationUITests.swift */; };
 		EF45A0AA2B0C831F001FB647 /* MicroservicesApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0A92B0C831F001FB647 /* MicroservicesApplicationUITestsLaunchTests.swift */; };
+		EF45A0B82B0C83B2001FB647 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = EF45A0B72B0C83B2001FB647 /* Factory */; };
+		EF45A0BB2B0C845E001FB647 /* UserStroageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0BA2B0C845E001FB647 /* UserStroageProtocol.swift */; };
+		EF45A0BD2B0C88A7001FB647 /* TokenValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0BC2B0C88A7001FB647 /* TokenValidatorProtocol.swift */; };
+		EF45A0BF2B0C9346001FB647 /* APIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0BE2B0C9346001FB647 /* APIEngine.swift */; };
+		EF45A0C12B0C956A001FB647 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0C02B0C956A001FB647 /* ServiceError.swift */; };
+		EF45A0C32B0C9609001FB647 /* CameraListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0C22B0C9609001FB647 /* CameraListService.swift */; };
+		EF45A0C62B0C9B4D001FB647 /* ProxyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF45A0C52B0C9B4D001FB647 /* ProxyContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,12 @@
 		EF45A0A32B0C831F001FB647 /* MicroservicesApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroservicesApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF45A0A72B0C831F001FB647 /* MicroservicesApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroservicesApplicationUITests.swift; sourceTree = "<group>"; };
 		EF45A0A92B0C831F001FB647 /* MicroservicesApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroservicesApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF45A0BA2B0C845E001FB647 /* UserStroageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStroageProtocol.swift; sourceTree = "<group>"; };
+		EF45A0BC2B0C88A7001FB647 /* TokenValidatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenValidatorProtocol.swift; sourceTree = "<group>"; };
+		EF45A0BE2B0C9346001FB647 /* APIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEngine.swift; sourceTree = "<group>"; };
+		EF45A0C02B0C956A001FB647 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		EF45A0C22B0C9609001FB647 /* CameraListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraListService.swift; sourceTree = "<group>"; };
+		EF45A0C52B0C9B4D001FB647 /* ProxyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF45A0B82B0C83B2001FB647 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,8 @@
 		EF45A0852B0C831D001FB647 /* MicroservicesApplication */ = {
 			isa = PBXGroup;
 			children = (
+				EF45A0C42B0C9B3E001FB647 /* Proxy */,
+				EF45A0B92B0C8450001FB647 /* Services */,
 				EF45A0862B0C831D001FB647 /* AppDelegate.swift */,
 				EF45A0882B0C831D001FB647 /* SceneDelegate.swift */,
 				EF45A08A2B0C831D001FB647 /* ViewController.swift */,
@@ -127,6 +143,26 @@
 			path = MicroservicesApplicationUITests;
 			sourceTree = "<group>";
 		};
+		EF45A0B92B0C8450001FB647 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EF45A0C02B0C956A001FB647 /* ServiceError.swift */,
+				EF45A0BA2B0C845E001FB647 /* UserStroageProtocol.swift */,
+				EF45A0BC2B0C88A7001FB647 /* TokenValidatorProtocol.swift */,
+				EF45A0BE2B0C9346001FB647 /* APIEngine.swift */,
+				EF45A0C22B0C9609001FB647 /* CameraListService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EF45A0C42B0C9B3E001FB647 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				EF45A0C52B0C9B4D001FB647 /* ProxyContainer.swift */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +179,9 @@
 			dependencies = (
 			);
 			name = MicroservicesApplication;
+			packageProductDependencies = (
+				EF45A0B72B0C83B2001FB647 /* Factory */,
+			);
 			productName = MicroservicesApplication;
 			productReference = EF45A0832B0C831D001FB647 /* MicroservicesApplication.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +254,9 @@
 				Base,
 			);
 			mainGroup = EF45A07A2B0C831D001FB647;
+			packageReferences = (
+				EF45A0B62B0C83B2001FB647 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = EF45A0842B0C831D001FB647 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF45A0C32B0C9609001FB647 /* CameraListService.swift in Sources */,
 				EF45A08B2B0C831D001FB647 /* ViewController.swift in Sources */,
+				EF45A0BD2B0C88A7001FB647 /* TokenValidatorProtocol.swift in Sources */,
+				EF45A0BB2B0C845E001FB647 /* UserStroageProtocol.swift in Sources */,
 				EF45A0872B0C831D001FB647 /* AppDelegate.swift in Sources */,
 				EF45A0892B0C831D001FB647 /* SceneDelegate.swift in Sources */,
+				EF45A0C12B0C956A001FB647 /* ServiceError.swift in Sources */,
+				EF45A0BF2B0C9346001FB647 /* APIEngine.swift in Sources */,
+				EF45A0C62B0C9B4D001FB647 /* ProxyContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +644,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF45A0B62B0C83B2001FB647 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = exactVersion;
+				version = 2.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF45A0B72B0C83B2001FB647 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF45A0B62B0C83B2001FB647 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF45A07B2B0C831D001FB647 /* Project object */;
 }
